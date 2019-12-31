@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 html{
    line-height: 1.15;
 }
 
 body{
-     font-family: 'Montserrat', sans-serif;
-     
+  overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	color: #505962;
+}
+
+.HeadLine{
+  text-transform: uppercase;
+}
+
+.HeadUnderline{
+  display: block;
+  width: 25%;
+  display: block;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 0 4px;
+  border-top: 4px double blue;
+  border-width: 5px;
 }
 .brand{
      font-size: 30px;
@@ -14,7 +32,7 @@ body{
 }
 
 .nav-link{
-      font-size: 16px;
+      font-size: 1rem;
   letter-spacing: 1px;
   color: #eee;
   transition: color .5s;
@@ -27,7 +45,9 @@ body{
     
     height: 100vh;
   /* using (linear-gradient) to darken the image so the text is a little brighter */
-  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .3)), url(/asstes/img/Bg/—Pngtree—united\ states\ national\ flag\ splash_4400039.png) no-repeat center center /cover;
+  background: url(/asstes/img/Bg/—Pngtree—united\ states\ national\ flag\ splash_4400039.png) no-repeat center center /cover;
+  background-attachment: fixed;
+  
 }
 
 .banner{
@@ -78,27 +98,47 @@ body{
 
 .Mission{
     
-     background: rgb(167, 16, 16);
+     background: white;
 }
 
 .Candidates{
      
-     background: blue;
+     background: #151f20;
+     color: #fff;
 }
 
 .candidates-img{
   display: none;
-  
+}
+.card-text{
+  color: #151f20;
 }
 .Candidates-link:hover + .candidates-img{
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translate(-50%, -50%);
   display: block;
   
 }
+.candidates-img-R{
+  display: none;
+}
+.Candidates-link:hover + .candidates-img-R{
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  
+}
+
+
 .Democrats{
-     background:rgb(167, 143, 8) ;
+     
 }
 .Republicans{
-     background:rgb(2, 212, 55) ;
+    
 }
 .Registration{
       background:red ;
@@ -106,14 +146,24 @@ body{
 .Booth-Locator{
      background: white;
 }
+
+/* start of google maps */
+#map{
+  width: 50vw;
+  height: 500px;
+}
+
+/* end of google maps */
 .Past-Presidents{
      
-     background: blue;
+     background: rgb(73, 73, 77);
 }
+
+
 
 .Candidates-link{
      color: #eee;
-  font-size: 15px;
+  font-size: 1.2rem;
   transition: all 0.3s; 
 }
 
