@@ -146,7 +146,9 @@ body{
 .Booth-Locator{
      background: white;
 }
-
+.formSection{
+  background: blue;
+}
 /* start of google maps */
 #map{
   width: 50vw;

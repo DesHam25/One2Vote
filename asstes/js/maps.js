@@ -1,8 +1,9 @@
 var map, infoWindow;
 
+
 function initMap() {
      var options = {
-          center: { lat: 40.7831, lng: -73.9712 },
+          center: { lat: 38.897957, lng: -77.03656 },
           zoom: 10
      };
 
@@ -26,10 +27,5 @@ function initMap() {
      } else {
           handleLocationError('No geolocation available.', map.getCenter());
      }
-}
+};
 
-function handleLocationError(content, position) {
-     infoWindow.setPosition(position);
-     infoWindow.setContent(content);
-     infoWindow.open(map);
-}

@@ -375,19 +375,35 @@
                          </div>
                     </div>
                </div>
+                    <div class="container">
+                         <div class="row" id="buttons"></div>
+                         <br />
+                         <br />
+                         <div class="row" id="cards"></div>
+                    </div>
+                    </section>
      </section>
      <section class="Booth-Locator" id="booth-Locator">
                <div class="container-fluid">
                     <div class="row">
-                         <div class="col">
-                              <h1>Booth Locator</h1>
+                         <div class=" formSection col-lg-5 p-4">
+                              <h3 class="mb-5 text-center text-black">Find your Polling Location</h3>
+                              <form class="contact-form">
+                                   <div class="form-group py-4">
+                                        <label for="address-input" class="label"></label>
+                                        <input type="text" class="form-control my-2 p-3 input" id="house-input"
+                                             placeholder="House Number">
+                                        <input type="text" class="form-control my-2 p-3 input" id="street-input" placeholder="Street">
+                                        <input type="text" class="form-control my-2 p-3 input" id="city-input" placeholder="City">
+                                        <input type="text" class="form-control my-2 p-3 input" id="state-input" placeholder="State">
+                                        <input type="text" class="form-control my-2 p-3 input" id="zipCode-input"
+                                             placeholder="Zip Code">
+                                   </div>
+                                   <button type="button" id="add-address"
+                                        class="btn btn-block p-2 font-weight-bold text-uppercase submit-button" value="Submit">Find My Location!</button>
+                              </form>
                          </div>
-                    </div>
-                    <div class="row">
-                         <div class="col">
-                              <div id="map">
-                              </div>
-                         </div>
+                         <div class="col-lg-7" id="map"></div>
                     </div>
                </div>
      </section>
@@ -549,6 +565,8 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqLwHB0DvECkX_LObbr1ukqG372MHfu8g&callback=initMap" async defer></script>
      
 <script src="/asstes/js/maps.js"></script>
+
+
 
 </body>
 </html>
